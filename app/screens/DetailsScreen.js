@@ -17,7 +17,7 @@ const DetailsScreen = ({ route, navigation }) => {
   const { verses, chorus, title } = route.params;
   return (
     <View style={styles.container}>
-      <Animatable.View style={styles.headerView}>
+      <Animatable.View animation="slideInDown" style={styles.headerView}>
         <Animatable.View
           animation="wobble"
           duration={500}

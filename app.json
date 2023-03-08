@@ -4,14 +4,18 @@
     "slug": "Hymn-Book",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/icon.png",
+    "jsEngine": "hermes",
+    "privacy": "public",
+    "platforms": ["ios", "android"],
+    "icon": "./src/assets/images/icon.png",
     "splash": {
-      "image": "./app/assets/splash.png",
+      "image": "./src/assets/images/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/df72197e-a930-453e-b09b-3d0e6c0bf2e5"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
@@ -21,12 +25,19 @@
       "package": "com.shyxperience.peacehymn",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/icon.png",
+        "foregroundImage": "./src/assets/images/icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
-    "web": {
-      "favicon": "./app/assets/favicon.png"
+    "description": "Basic Hymn book app",
+    "githubUrl": "https://github.com/AdamuAbba/peace_hymn.git",
+    "extra": {
+      "eas": {
+        "projectId": "df72197e-a930-453e-b09b-3d0e6c0bf2e5"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }
